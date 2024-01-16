@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .Container{
+        width: 600px;
+        padding:20px 20px 20px 20px;
+    }
+    .Container h2{
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .Container .card{
+        display: flex;
+        column-gap: 20px;
+    }
+    .Container .column{
+        border: 2px solid black;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        
+    }
+    .Container .column .btn{
+        background-color: black;
+        width: 100%;
+        height: 30px;
+        color: white;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+    .Container .column p{
+        margin-top: 20px;
+    }
+    .Container .column h3{
+        margin-top: 20px;
+    }
+    .Container .column i{
+        font-size: 50px;
+    }
+
+    /* Responsive */
+    @media  screen and (max-width:500px) {
+        .form .column{
+            flex-wrap: wrap;
+        }
+    }
+</style>
+<body>
+    <div class="Container">
+        <h2>RESPONSIVE CARDS</h2>
+        <div class="card">
+            <div class="column">
+                <i class='bx bxl-twitter'></i>
+                <h3>TWITTER</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button type="submit" class="btn" >Read More</button>
+            </div>
+
+            <div class="column">
+                <i class='bx bxl-instagram'></i>
+                <h3>INSTAGRAM</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button type="submit" class="btn">Read More</button>
+            </div>
+
+            <div class="column">
+                <i class='bx bxl-youtube' ></i>
+                <h3>YOUTUBE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button type="submit" class="btn">Read More</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

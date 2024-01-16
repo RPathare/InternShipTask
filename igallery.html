@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+.navigationbar{
+            background-color: rgb(158, 217, 222);
+            
+        }
+         .navigationbar ul{
+            overflow: auto;
+            
+        } 
+        .navigationbar li{ 
+             float: left; 
+             margin: 13px 20px; 
+             
+        } 
+        .navigationbar a:hover{
+            color: rgb(12, 95, 154);
+        }
+        .navigationbar  a{
+            color: white;
+            padding: 3px 3px;
+            text-decoration: none;
+            
+            /* float:left;
+            margin: 13px 20px; */
+            
+        }
+        .image{
+            background-color: rgb(80, 221, 221);
+            height: 100vh;
+            width: 100vw;
+            justify-self: end;
+            
+
+        }
+        .image h3{
+            margin: 20px;
+            padding: 5px 5px 5px 15px;
+        }
+</style>
+<body>
+    <nav class="navigationbar">
+        <ul type="none">
+            <li><a href="#">Multi One</a></li>
+            <li><a href="#">Multi Two</a></li>
+            <li><a href="#">Multi Three</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Keep In Touch</a></li>
+            
+        </ul>
+    </nav>
+    <section class="image">
+        <h3 style="color: white;">Multi Color Image Gallery</h3>
+        <div class="container">
+            
+            <div>
+                <img src="girls2.jpg" alt="not found">
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

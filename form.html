@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>Here we design our first form</h3>
+    <form action="chikuu.php">
+     <div>
+        <!--label: name vr click kel ki box select hoto -->
+        <label for="name">Name</label>
+        <input type="text" name="myname" id="name">
+     </div>
+     <br>
+     <div>
+        <label for="role">Roll</label>
+     <input type="text" name="myrole" id="role">
+     </div>
+     <br>
+     <div>
+        Email : <input type="email" name="myemail">
+     </div>
+     <br>
+     <div>
+        <!-- calender -->
+        <input type="date" name="mydate">
+     </div>
+     <br>
+     <div>
+        <!--tap kelyavr number increasing or decreasing  -->
+        roll no: <input type="number" name="myroll">
+     </div>
+     <br>
+     <div>
+        <!-- Checkbox -->
+        Are you already submit: <input type="checkbox" name="mycheck">
+     </div>
+     <br>
+     <div>
+        Write your opinion: <br><textarea name="mytext" id="" cols="30" rows="10"></textarea>
+     </div>
+     <br>
+     <div>
+        <label for="car">Car</label>
+        <select name="mycar" id="car">
+        <option value="ind">Indica</option>
+        <!-- alrady 1 select kraych asel tr write selected -->
+        <option value="glo" selected>Gloster</option>
+        <option value="bmw">BMW</option>
+        <option value="mer">Mersdis</option>
+        </select>
+     </div>
+     <br>
+     <div>
+        <!-- radiobutton -->
+        Gender : Male <input type="radio" name="myradio"> Female : <input type="radio" name="myradio"> Other : <input type="radio" name="myradio">
+     </div>
+     <br>
+     <div>
+        Color : <input type="color" name="mycolor">
+     </div>
+     <br>
+     <div>
+        toggle : <input type="button" name="mytoggle" cols="5" rows="'5">
+     </div>
+     <br>
+     <div>
+        <input type="submit" value="submit now">
+        <input type="reset"  value="reset now">
+     </div>
+
+
+    </form>
+</body>
+</html>
